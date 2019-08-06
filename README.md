@@ -22,6 +22,20 @@
   
 ## How to run this application
 
-Clone the git repo using following command
-#
+# Clone the git repo using following command
+
 	git clone https://github.com/gurinderskarwal/securepaytest.git
+
+# Compile the application
+
+	mvn clean compile 
+	
+# Run the application
+	
+	mvn test -DDwebdriver.chrome.driver=C:/tools/chromedriver.exe
+	
+Assuming your chromedriver.exe is located in C:/tools. If not change this path to appropriate location on your system.
+
+This should open the brower and will do the required steps.
+
+Once tests are run report (report.html) will be availbale in target/cucumber-reports
