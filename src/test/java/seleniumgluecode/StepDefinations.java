@@ -9,11 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pageobjects.contactus;
-import pageobjects.googlehome;
-import pageobjects.securepayhomepage;
+import pageobjects.ContactUs;
+import pageobjects.GoogleHome;
+import pageobjects.SecurePayHomePage;
 
-public class stepdefinations {
+public class StepDefinations {
 	
     public static WebDriver driver;
 
@@ -26,20 +26,20 @@ public class stepdefinations {
 
 	@Given("^User types securepage in search box$")
 	public void user_types_securepage_in_search_box() throws Throwable {
-		googlehome gh = new googlehome(driver);
+		GoogleHome gh = new GoogleHome(driver);
     	gh.searchText();
 	}
 
 	@When("^user clicks on search button$")
 	public void user_clicks_on_search_button() throws Throwable {
-		googlehome gh = new googlehome(driver);
+		GoogleHome gh = new GoogleHome(driver);
     	gh.submitSearch();
 	}
 
 	@When("^user clicks on securepage website$")
 	public void user_clicks_on_securepage_website() throws Throwable {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        googlehome gh = new googlehome(driver);
+        GoogleHome gh = new GoogleHome(driver);
 		gh.searchResults();
 	}
 
@@ -51,7 +51,7 @@ public class stepdefinations {
 
 	@Then("^user clicks on contact us page$")
 	public void user_clicks_on_contact_us_page() throws Throwable {
-		securepayhomepage hp = new securepayhomepage(driver);
+		SecurePayHomePage hp = new SecurePayHomePage(driver);
 		hp.contactusBtn();
 	}
 
@@ -65,7 +65,7 @@ public class stepdefinations {
 
 	@Then("^user fill data in contact us form$")
 	public void user_fill_data_in_contact_us_form() throws Throwable {
-		contactus cu = new contactus(driver);
+		ContactUs cu = new ContactUs(driver);
 		cu.firstName();
 		cu.lastName();
 		cu.emailRandom();

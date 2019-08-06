@@ -3,7 +3,7 @@ package pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class securepayhomepage 
+public class SecurePayHomePage 
 {
 	WebDriver driver;
 	
@@ -12,7 +12,7 @@ public class securepayhomepage
 	/*
 	 * This function returns driver
 	*/
-	public securepayhomepage(WebDriver driver)	
+	public SecurePayHomePage(WebDriver driver)	
 	{
 
         this.driver = driver;

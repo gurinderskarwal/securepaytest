@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**/
-public class googlehome 
+public class GoogleHome 
 {
 
 WebDriver driver;
@@ -17,7 +17,7 @@ WebDriver driver;
 	/*
 	 * This function returns driver
 	*/
-	public googlehome(WebDriver driver)	
+	public GoogleHome(WebDriver driver)	
 	{
 
         this.driver = driver;

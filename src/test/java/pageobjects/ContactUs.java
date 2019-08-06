@@ -6,18 +6,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class contactus 
+public class ContactUs 
 {
 
 	WebDriver driver;
 
-	String firstnamerandom = RandomStringUtils.randomAlphabetic(10);
-	String lastnamerandom = RandomStringUtils.randomAlphabetic(10);
-	String phonerandom = RandomStringUtils.randomNumeric(9);
-	String companyrandom = RandomStringUtils.randomAlphanumeric(10);
-	String emailrandom = RandomStringUtils.random(4, "testingisbeingdone") + "@" + "abc.com";
-	String urlrandom = RandomStringUtils.random(8, "http://www." + "testingisbeingdone") + "." + "com";
-	String contactustitle = "Contact us";
+	String firstNameRandom = RandomStringUtils.randomAlphabetic(10);
+	String lastNameRandom = RandomStringUtils.randomAlphabetic(10);
+	String phoneRandom = RandomStringUtils.randomNumeric(9);
+	String companyRandom = RandomStringUtils.randomAlphanumeric(10);
+	String emailRandom = RandomStringUtils.random(4, "testingisbeingdone") + "@" + "abc.com";
+	String urlRandom = RandomStringUtils.random(8, "http://www." + "testingisbeingdone") + "." + "com";
+	String contactUsTitle = "Contact us";
 
 
 	
@@ -33,7 +33,7 @@ public class contactus
 	/*
 	 * This function returns driver
 	*/
-	public contactus(WebDriver driver)	
+	public ContactUs(WebDriver driver)	
 	{
 
         this.driver = driver;
@@ -45,7 +45,7 @@ public class contactus
 	 */
 	public void firstName()
 	{
-		driver.findElement(firstname).sendKeys(firstnamerandom);
+		driver.findElement(firstname).sendKeys(firstNameRandom);
 
 	}
 	/*
@@ -53,7 +53,7 @@ public class contactus
 	 */
 	public void lastName()
 	{
-		driver.findElement(lastname).sendKeys(lastnamerandom);
+		driver.findElement(lastname).sendKeys(lastNameRandom);
 
 	}
 	/*
@@ -61,7 +61,7 @@ public class contactus
 	 */
 	public void phone()
 	{
-		driver.findElement(phone).sendKeys(phonerandom);
+		driver.findElement(phone).sendKeys(phoneRandom);
 
 	}
 	
@@ -70,7 +70,7 @@ public class contactus
 	 */
 	public void company()
 	{
-		driver.findElement(company).sendKeys(companyrandom);
+		driver.findElement(company).sendKeys(companyRandom);
 
 	}
 	
@@ -79,7 +79,7 @@ public class contactus
 	 */
 	public void emailRandom()
 	{
-		driver.findElement(email).sendKeys(emailrandom);
+		driver.findElement(email).sendKeys(emailRandom);
 
 	}
 	
@@ -88,7 +88,7 @@ public class contactus
 	 */
 	public void urlRandom()
 	{
-		driver.findElement(websiteurl).sendKeys(urlrandom);
+		driver.findElement(websiteurl).sendKeys(urlRandom);
 
 	}
 	
