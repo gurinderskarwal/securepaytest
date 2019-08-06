@@ -24,15 +24,15 @@
 
 # Clone the git repo using following command
 
-	git clone https://github.com/gurinderskarwal/securepaytest.git
+	```git clone https://github.com/gurinderskarwal/securepaytest.git```
 
 # Compile the application
-
-	mvn clean compile 
+	```cd securepaytest
+	mvn clean compile ```
 	
 # Run the application
 	
-	mvn test -DDwebdriver.chrome.driver=C:/tools/chromedriver.exe
+	```mvn test -DDwebdriver.chrome.driver=C:/tools/chromedriver.exe```
 	
 Assuming your chromedriver.exe is located in C:/tools. If not change this path to appropriate location on your system.
 
