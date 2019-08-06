@@ -30,7 +30,8 @@
 
 ```
 cd securepaytest
-mvn clean compile```
+mvn clean compile
+```
 	
 # Run the application
 	
