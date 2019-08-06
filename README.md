@@ -35,10 +35,10 @@ mvn clean compile
 	
 # Run the application
 	
-```mvn test -DDwebdriver.chrome.driver=C:/tools/chromedriver.exe```
+```mvn test ```
 	
-Assuming your chromedriver.exe is located in C:/tools. If not change this path to appropriate location on your system.
+Make sure chromedriver executable (chromedriver.exe for windows e.g.) is in your system path.
 
-This should open the brower and will do the required steps.
+This should open the browser and will do the required steps.
 
 Once tests are run report (report.html) will be availbale in target/cucumber-reports
