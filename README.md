@@ -24,4 +24,4 @@
 
 Clone the git repo using following command
 #
-	git clone https://github.com/gurinderskarwal/securepay.git'
+	git clone https://github.com/gurinderskarwal/securepaytest.git
